@@ -1,0 +1,33 @@
+The Spring-o-Bot Framework is a Java Framework to control iRobot Create robots
+via the Open Interface.
+
+--------------------------------------------------------------------------------
+
+In order to use the Spring-o-Bot Framework you need:
+
+ * Java SE 1.6 (Lower versions may be ok too but have not been tested):
+   http://www.oracle.com/technetwork/java/index.html
+
+ * Java Communications 3.0 API:
+   http://www.oracle.com/technetwork/java/index-jsp-141752.html
+
+ * An iRobot Create connected to your PC via the serial port (or with the
+   optional USB cable):
+   http://www.irobot.com/create
+
+--------------------------------------------------------------------------------
+
+Copyright 2011 Sebastian Kaspari
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
