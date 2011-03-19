@@ -18,7 +18,7 @@ package de.pocmo.springobot.hardware;
 /**
  * Opcodes as defined by the Open Interface specification.
  * 
- * @author Sebastian Kaspari <s.kaspari@googlemail.com>
+ * @author Sebastian Kaspari <s.kaspari@gmail.com>
  */
 public class Opcode
 {

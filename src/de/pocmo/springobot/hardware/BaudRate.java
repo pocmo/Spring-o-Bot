@@ -19,7 +19,7 @@ package de.pocmo.springobot.hardware;
  * Constants for the baud rates as defined in the Open Interface
  * specification.
  *
- * @author Sebastian Kaspari <s.kaspari@googlemail.com>
+ * @author Sebastian Kaspari <s.kaspari@gmail.com>
  */
 public class BaudRate
 {

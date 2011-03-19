@@ -19,7 +19,7 @@ package de.pocmo.springobot.hardware;
  * Constants for the charging state as returned by the charging
  * sensor.
  *
- * @author Sebastian Kaspari <s.kaspari@googlemail.com>
+ * @author Sebastian Kaspari <s.kaspari@gmail.com>
  */
 public class ChargingState
 {
