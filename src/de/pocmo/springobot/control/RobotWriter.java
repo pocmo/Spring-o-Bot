@@ -13,10 +13,11 @@
    See the License for the specific language governing permissions and
    limitations under the License.
  */
-package de.pocmo.springobot.hardware;
+package de.pocmo.springobot.control;
 
 import java.io.IOException;
 import java.io.OutputStream;
+
 
 /**
  * RobotWriter class for sending commands via the Open Interface.

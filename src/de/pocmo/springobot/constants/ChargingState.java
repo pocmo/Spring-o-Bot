@@ -13,7 +13,7 @@
    See the License for the specific language governing permissions and
    limitations under the License.
  */
-package de.pocmo.springobot.hardware;
+package de.pocmo.springobot.constants;
 
 /**
  * Constants for the charging state as returned by the charging

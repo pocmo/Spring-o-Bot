@@ -13,13 +13,11 @@
    See the License for the specific language governing permissions and
    limitations under the License.
  */
-package de.pocmo.springobot.hardware;
+package de.pocmo.springobot.sensors;
 
 import java.io.IOException;
 import java.io.InputStream;
 
-import de.pocmo.springobot.sensors.Packet;
-import de.pocmo.springobot.sensors.Sensor;
 
 /**
  * RobotReader class for read sensor packets from the Open Interface.
