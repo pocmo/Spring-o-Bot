@@ -11,6 +11,9 @@ In order to use the Spring-o-Bot Framework you need:
  * Java Communications 3.0 API:
    http://www.oracle.com/technetwork/java/index-jsp-141752.html
 
+ * Or the RXTX serial package for Java:
+   http://www.cloudhopper.com/opensource/rxtx/
+
  * An iRobot Create connected to your PC via the serial port (or with the
    optional USB cable):
    http://www.irobot.com/create
