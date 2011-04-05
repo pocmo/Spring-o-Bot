@@ -241,6 +241,66 @@ public class RobotWriter
     }
 
     /**
+     * Drive the given distance (in mm).
+     *
+     * @param velocity        Velocity (-500 – 500 mm/s)
+     *                        Average velocity of the drive wheels in
+     *                        millimeters per second (mm/s).
+     *
+     * @param turnRadius      Radius (-2000 – 2000 mm)
+     *                        Radius in millimeters at which Create will
+     *                        turn. The longer radii make Create drive
+     *                        straighter, while the shorter radii make
+     *                        Create turn more. The radius is measured
+     *                        from the center of the turning circle to
+     *                        the center of Create.
+     *
+     * @param distanceToDrive The distance to drive in mm.
+     *
+     * @see de.pocmo.springobot.control.RobotWriter#drive(int, int)
+     */
+    public void driveDistance(int velocity, int turnRadius, int distanceToDrive)
+    {
+        this.drive(velocity, turnRadius);
+
+        this.send(
+            Opcode.WAIT_DISTANCE,
+            (distanceToDrive & 0x0000FF00) >> 8,
+            distanceToDrive & 0x000000FF
+        );
+    }
+
+    /**
+     * Drive the given angle (in degrees).
+     *
+     * @param velocity   Velocity (-500 – 500 mm/s)
+     *                   Average velocity of the drive wheels in
+     *                   millimeters per second (mm/s).
+     *
+     * @param turnRadius Radius (-2000 – 2000 mm)
+     *                   Radius in millimeters at which Create will
+     *                   turn. The longer radii make Create drive
+     *                   straighter, while the shorter radii make
+     *                   Create turn more. The radius is measured
+     *                   from the center of the turning circle to
+     *                   the center of Create.
+     *
+     * @param angleToGo  The angle to drive in degrees.
+     *
+     * @see de.pocmo.springobot.control.RobotWriter#drive(int, int)
+     */
+    public void driveAngle(int velocity, int turnRadius, int angleToGo)
+    {
+        this.drive(velocity, turnRadius);
+
+        this.send(
+            Opcode.WAIT_ANGLE,
+            (angleToGo & 0x0000FF00) >> 8,
+            angleToGo & 0x000000FF
+        );
+    }
+
+    /**
      * Send the given command byte and (optional) data byte(s).
      *
      * @param command Command byte
