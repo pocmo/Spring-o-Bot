@@ -233,10 +233,10 @@ public class RobotWriter
 
         this.send(
             Opcode.DRIVE_DIRECT,
-            velocityRight & 0x0000FF00, // Velocity right high byte
-            velocityRight & 0x000000FF, // Velocity right low byte
-            velocityLeft & 0x0000FF00,  // Velocity left high byte
-            velocityLeft & 0x000000FF   // Velocity left low byte
+            (velocityRight & 0x0000FF00) >> 8, // Velocity right high byte
+            velocityRight & 0x000000FF,        // Velocity right low byte
+            (velocityLeft & 0x0000FF00) >> 8,  // Velocity left high byte
+            velocityLeft & 0x000000FF          // Velocity left low byte
         );
     }
 
